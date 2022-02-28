@@ -22,11 +22,11 @@ What follows was to put every interesting issue into one basket before sorting t
 3. Environmental crisis (temperature, etc)
 4. Economical issues
 
-From my side, the uttermost question during the design process had been 'How do we apply DATA for such issues?'. In other words, it was essential to carefully consider the followings:
-	- Do we have enough data to solve the issue?
-	- Are data reliable?
-	- What can you come up with this data?
-  - Can you create technical aspects out of data?
+From my side, the uttermost question during the design process had been 'How do we apply DATA for such issues?'. In other words, it was essential to carefully consider the followings:  
+- Do we have enough data to solve the issue?
+- Are data reliable?
+- What can you come up with this data?
+- Can you create technical aspects out of data?
 
 
 ## Challenges within the challenge
@@ -38,3 +38,12 @@ a. this could be the biggest challenge we faced. The dataset was high-dimensiona
 b. We have found a number of possible solutions which include APIs, however, none of them worked in a way we would need desperately.
 The worked solution: geo package in R 
 
+	library(maps)
+	GISCONVERT <- function(df) {
+  start <- Sys.time()
+  country <- map.where(database = "world",
+            df$lon, df$lat)
+  endm <- Sys.time
+  country_df <- as.data.frame(country)
+  new_df <- rbind(df, country_df)
+}
