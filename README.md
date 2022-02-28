@@ -30,7 +30,8 @@ From my side, the uttermost question during the design process had been 'How do 
 
 
 ## Challenges within the challenge
-PROBLEMS
+PROBLEMS  
+
 	1. working with large data importing data was already a big challenge as it requires an extensive memory of your computer. It also took a lot of minutes just to get your data ready in your working environment. What we could have done would be using PyArrow instead of Pandas. Check this article for more information https://medium.com/towards-data-science/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
 		
 	2. Geodata
