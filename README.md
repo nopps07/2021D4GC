@@ -39,8 +39,9 @@ b. We have found a number of possible solutions which include APIs, however, non
 The worked solution: geo package in R 
 
 ```
-	library(maps)
-	GISCONVERT <- function(df) {
+library(maps)
+
+GISCONVERT <- function(df) {
   	start <- Sys.time()
   	country <- map.where(database = "world",
             	df$lon, df$lat)
@@ -49,3 +50,4 @@ The worked solution: geo package in R
   	new_df <- rbind(df, country_df)
 	}
 ```
+*Note*: After GISCONVERT, you need to manipulate and tidy your data frame. In this post, I skip those parts as they are not in the main focus.
