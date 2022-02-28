@@ -16,11 +16,11 @@ Brain-storming is essential in most group works. Especially for the D4GC a speci
 
 Within this framework, the first accordance at which the team arrived was, in a simpler way, to solve one of the prevalent major problems on earth.
 
-What follows was to put every interesting issue into one basket before sorting them out. The shared issues were as follows:
-	1. Mental health
-	2. Plastic pollution
-	3. Environmental crisis (temperature, etc)
-  4. Economical issues
+What follows was to put every interesting issue into one basket before sorting them out. The shared issues were as follows:  
+1. Mental health
+2. Plastic pollution
+3. Environmental crisis (temperature, etc)
+4. Economical issues
 
 From my side, the uttermost question during the design process had been 'How do we apply DATA for such issues?'. In other words, it was essential to carefully consider the followings:
 	- Do we have enough data to solve the issue?
@@ -31,11 +31,10 @@ From my side, the uttermost question during the design process had been 'How do 
 
 ## Challenges within the challenge
 PROBLEMS  
-
-	1. working with large data importing data was already a big challenge as it requires an extensive memory of your computer. It also took a lot of minutes just to get your data ready in your working environment. What we could have done would be using PyArrow instead of Pandas. Check this article for more information https://medium.com/towards-data-science/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
+1. working with large data importing data was already a big challenge as it requires an extensive memory of your computer. It also took a lot of minutes just to get your data ready in your working environment. What we could have done would be using PyArrow instead of Pandas. Check this article for more information https://medium.com/towards-data-science/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
 		
-	2. Geodata
-		a. this could be the biggest challenge we faced. The dataset was high-dimensional, and it was sorted by latitude and longitude which needed to be converted into corresponding places. 
-		b. We have found a number of possible solutions which include APIs, however, none of them worked in a way we would need desperately.
+2. Geodata
+a. this could be the biggest challenge we faced. The dataset was high-dimensional, and it was sorted by latitude and longitude which needed to be converted into corresponding places. 
+b. We have found a number of possible solutions which include APIs, however, none of them worked in a way we would need desperately.
 The worked solution: geo package in R 
 
