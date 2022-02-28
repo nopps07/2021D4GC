@@ -40,10 +40,10 @@ The worked solution: geo package in R
 
 	library(maps)
 	GISCONVERT <- function(df) {
-  start <- Sys.time()
-  country <- map.where(database = "world",
-            df$lon, df$lat)
-  endm <- Sys.time
-  country_df <- as.data.frame(country)
-  new_df <- rbind(df, country_df)
-}
+  	start <- Sys.time()
+  	country <- map.where(database = "world",
+            	df$lon, df$lat)
+  	endm <- Sys.time
+  	country_df <- as.data.frame(country)
+  	new_df <- rbind(df, country_df)
+	}
