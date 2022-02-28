@@ -38,6 +38,7 @@ a. this could be the biggest challenge we faced. The dataset was high-dimensiona
 b. We have found a number of possible solutions which include APIs, however, none of them worked in a way we would need desperately.
 The worked solution: geo package in R 
 
+```
 	library(maps)
 	GISCONVERT <- function(df) {
   	start <- Sys.time()
@@ -47,3 +48,4 @@ The worked solution: geo package in R
   	country_df <- as.data.frame(country)
   	new_df <- rbind(df, country_df)
 	}
+```
