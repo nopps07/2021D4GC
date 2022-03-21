@@ -42,7 +42,43 @@ IPCC.
 The original data is *the international Social Survey Programme 2010 - Environment III*. As our challenge highlited on the environmental concern. It was important to collect a survey which could reflect how citizens percieve prevalent environmental issues. The taken steps in order to arrive *Dataset 5* are as follows:  
   - Select relevant survey questionnaires (ex: environmental-friendly behaviour (quantitative) + macro-indicators: Education level, income group (qualitative))  
   - Combine similar questionnaires to one so it has larger and clearer distribution.  
-  - In order to perform this summation, the *Cronbach's Alpha* parameter was obtained. In general, the parameter larger than 0.7 is considered good and therefore those questionnaries can be merged. Our criteria was to have larger than 0.75 in order to increase validity.  
+  - In order to perform this summation, the *Cronbach's Alpha* parameter was obtained. In general, the parameter larger than 0.7 is considered good and therefore those questionnaries can be merged. Our criteria was to have larger than 0.75 in order to increase validity. The example codes can be found below  
+```
+library(dplyr)
+library(ltm) #cronbach alpha
+
+#Import raw data
+#Note that we already have selected relevant questionaires
+issp <- read.csv("ISSPtrial.csv", header = TRUE)
+
+#Cronbach's alpha (example)
+df <- issp %>% dplyr::select(v39:v45)
+df <- df %>% 
+  na.omit()
+cronbach.alpha(df) # 0.816; interpretation: Climate change is extremely dangerous for the environment
+
+#Manipulation
+#1. Delete missing data (not recommend in pratice)
+#2. Change Likert Scale to more intuitive order (6 = Most, 1 = Least)
+#3. Combine 
+df <- df %>%
+  na.omit() %>%
+  mutate(v29 = 6 - v29, v30 = 6 - v30, v31 = 6 - v31, v32 = 6 - v32, v33 = 6 - v33,#care_env
+         v34 = 6 - v34, v35 = 6 - v35, v36 = 6 - v36, #exag_env
+         v39 = 6 - v39, v40 = 6 - v40, v41 = 6 - v41, v42 = 6 - v42, v43 = 6 - v43, v44 = 6 - v44, v45 = 6 - v45, #climate_crisis
+         v58 = 5 - v58, v59 = 5 - v59, v60 = 5 - v60, #protect_env
+         gov_peo = v46,
+         gov_bus = v47,
+         how_bus = v49,
+         how_peo = v50,
+         mem_env = v61,
+  ) %>%
+  mutate(care_env = v15 + v29 + v30 + v31 + v32 + v33 + v38,
+         exag_env = v34 + v35 + v36,
+         climate_crisis = v39 + v40 + v41 + v42 + v43 + v44 + v45,
+         protect_env = v58 + v59 + v60)
+#Note that the merging process is verified by larger than 0.75 Cronbach alpha
+```
 
 The possible actions that the D4GC participants could have taken were:  
   - Regression analysis: does income level or educational achievement affect your attitude towards environmental issues?
