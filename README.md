@@ -39,7 +39,7 @@ IPCC.
 2. Dataset 3 & 4
 
 3. Dataset 5 (ISSP Survey)  
-The original data is *the international Social Survey Programme 2010 - Environment III*. As our challenge highlited on the environmental concern. It was important to collect a survey which could reflect how citizens percieve prevalent environmental issues. The taken steps in order to arrive *Dataset 5* are as follows:  
+The original data is *[the international Social Survey Programme 2010 - Environment III](http://www.issp.org/menu-top/home/)*. As our challenge highlited on the environmental concern. It was important to collect a survey which could reflect how citizens percieve prevalent environmental issues. The taken steps in order to arrive *Dataset 5* are as follows:  
   - Select relevant survey questionnaires (ex: environmental-friendly behaviour (quantitative) + macro-indicators: Education level, income group (qualitative))  
   - Combine similar questionnaires to one so it has larger and clearer distribution.  
   - In order to perform this summation, the *Cronbach's Alpha* parameter was obtained. In general, the parameter larger than 0.7 is considered good and therefore those questionnaries can be merged. Our criteria was to have larger than 0.75 in order to increase validity. The example codes can be found below  
@@ -87,7 +87,7 @@ The possible actions that the D4GC participants could have taken were:
 ## Challenges within the challenge design
 PROBLEMS  
 1. Large-Sized Data  
-Importing data was already a big challenge as it requires an extensive memory of your computer. It also took a lot of minutes just to get your data ready in your working environment. What we could have done would be using PyArrow instead of Pandas. Check this article for more information https://medium.com/towards-data-science/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475
+Importing data was already a big challenge as it requires an extensive memory of your computer. It also took a lot of minutes just to get your data ready in your working environment. What we could have done would be using PyArrow instead of Pandas. Check *[this article](https://medium.com/towards-data-science/stop-using-pandas-to-read-write-data-this-alternative-is-7-times-faster-893301633475)* for more information 
 		
 2. Geodata
 a. this could be the biggest challenge we faced. The dataset was high-dimensional, and it was sorted by latitude and longitude which needed to be converted into corresponding places. 
