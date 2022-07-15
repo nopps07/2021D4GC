@@ -12,26 +12,26 @@ The document will consist of mainly three parts:
 - **Lessons during the journey**
 
 ## Strategical data brain-storming
-Brain-storming is essential in most group works. Especially for the D4GC, a specific process, so-called DATA brain-storm (according to me), is highly needed. Precisely, we adopted a **Top-Down approach**, meaning that we started with identifying the broader concept of the challenge first and narrow down the options.
+Brain-storming is essential in most works. Especially for data-driven challenge designs, the so-called *DATA* brainstorm is highly needed. Precisely, we adopted a **Top-Down approach**, meaning that we identified the broader concept of the challenge first and created sub-branches on top of that.
 
-Within this framework, the team arrived at the following motivation *"We will tackle one of the prevalent major problems (social issues) on earth".*
+Within this framework, the team arrived at the following motivation *"We will tackle one of the prevalent major problems (social issues) on the planet".*
 
-What follows was to put every interesting social issue into one basket before sorting them out. The shared issues were as follows:  
+What follows was to put interesting social issues into one basket. The shared issues were as follows:  
 **1. Mental health**
 **2. Plastic pollution**
 **3. Environmental crisis (temperature, etc)**
 **4. Economical issues**
 
-The uttermost question of the team during the design process was *"How do we apply DATA for such issues?"*. Put differently, it was essential to carefully consider the followings:  
-- Do we have **enough data** to solve the issue?
+The uttermost question of the team during the design process was *"How do we utilize DATA to deliver solutions to such issues?"*. Put differently, it was essential to carefully consider the followings:  
+- Do we have **enough and relevant data** to solve the issue?
 - Are data **reliable**?
 - **What can you do** with this data?
 - Can you create **technical aspects out of data** while allowing non-technical students to interpret the data?
 
-D4GC stands out from the peer challenges since it opens the chance to not only technical students but also non-technical ones. In other words, we believe data requires a technical mindset as well entrepreneurial insight. Therefore, it is crucial for the challenge design team to aim to balance these two main aspects. This should be properly addressed at the beginning stage.
+The strength of D4GC comes from the fact that it opens a door to not only technical students but also non-technical ones. In other words, we believe data requires a technical mindset as well as entrepreneurial insight. Therefore, it is critical for the challenge design team to balance these two main aspects. This should be properly addressed at the beginning stage.
 
 ## Technical data build-up
-In this section, I will focus on the data manipulation and specific methods that we utilized instead of explaining the sources of the original datasets. If necessary, please check out the links that are added next to the keywords.
+In this section, I will focus on the data manipulation and specific methods applied to the raw data. If necessary, please check out the links that are added next to the keywords.
 
 **1. Dataset 1 & 2**
 IPCC. 
@@ -39,11 +39,13 @@ IPCC.
 **2. Dataset 3 & 4**  
 Dataset 3 provides demographic indicators such as Population (+ growth rate) and GDP per capita, while Dataset 4 shows energy consumption (co2, overall consumption per capita) of the countries. The original data are from multiple databases which are internationally recognized, which can be found in the reference page of **[the challenge documentation](https://github.com/nopps07/2021D4GC/blob/main/2021%20D4GC%20Challenge%20Documentation.pdf)**.  
 
-In order to complete these datasets, the following steps were taken:  
+In order to complete final ready-to-go datasets, the following steps were taken:  
   - Select indicators that are relevant to the topic.
   - Preprocess the data.
 
-Note that the data preprocessing should normally contain *dealing with missing data* and *normalization*. Some countries are more likely to have missing data as they would not have enough data channels to report, whereas most developed countries do not have any missing values. In addition, it was crucial to keep in mind that the different units and measurements were utilized as they are from multiple databases. The latter was clearly managed during the process. But, the missing data was not clearly handled in the process due to the following reason:
+Note that the data preprocessing should normally contain *missing data handling* and *normalization*. Some countries are more likely to have missing data as they would not have enough data channels to report. In addition, it was crucial to keep in mind that the different units and measurements were utilized as the data collectors took dissimilar approaches. The latter was clearly managed during the process. But, the missing data handling was not an easy task due to the following reason:
+  - Imbalance between developed & developing countries.
+  	- check
   - We would not exclude countries just because they do not have enough data. (Avoiding the case that people only work on developed countries + minimize bias)  
  
 Despite our acceptable intention, it would have created better outcomes if the participants had not had to spend time dealing with missing data. Note that **Select & Focus** is always essential in many ways.
