@@ -1,7 +1,7 @@
 # 2021D4GC
 
 ## Opening words
-Welcome to the **2021 Data 4 Good Challenge (D4GC)** documentation. My name is **[Gunho Lee](https://www.linkedin.com/in/gunho-lee/)**, who was the Lead D4GC challenge design. Before diving into the details, I would like to first send massive thanks to the entire **[Emergent team](https://www.linkedin.com/company/emergent-leuven)**, and especially **[Saptarshi Chakrabarti](https://www.linkedin.com/in/csap96/)** and **[Juli Dema](https://www.linkedin.com/in/julidema/)**, who worked on it together with me.
+Welcome to the **2021 Data 4 Good Challenge (D4GC)** documentation. My name is **[Gunho Lee](https://www.linkedin.com/in/gunho-lee/)**, who was the Lead D4GC challenge design. Before diving into the details, I would like to first send massive thanks to the entire **[Emergent team](https://www.linkedin.com/company/emergent-leuven)**, and especially **[Juli Dema](https://www.linkedin.com/in/julidema/)** and **[Saptarshi Chakrabarti](https://www.linkedin.com/in/csap96/)**, who designed the topic together with me.
 
 The purpose of this document is to summarize the journey to **the 2021 D4GC** and provide self-feedback to ourselves that would be useful for the next D4GC challenge design.
 
