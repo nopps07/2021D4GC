@@ -17,9 +17,10 @@ Brain-storming is essential in most works. Especially for data-driven challenge 
 Within this framework, the team arrived at the following motivation *"We will tackle one of the prevalent major problems (social issues) on the planet".*
 
 What follows was to put interesting social issues into one basket. The shared issues were as follows:  
-**1. Mental health**
-**2. Plastic pollution**
-**3. Environmental crisis (temperature, etc)**
+
+**1. Mental health**  
+**2. Plastic pollution**  
+**3. Environmental crisis (temperature, etc)**  
 **4. Economical issues**
 
 The uttermost question of the team during the design process was *"How do we utilize DATA to deliver solutions to such issues?"*. Put differently, it was essential to carefully consider the followings:  
