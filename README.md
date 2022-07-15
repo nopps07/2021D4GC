@@ -34,7 +34,50 @@ The strength of D4GC comes from the fact that it opens a door to not only techni
 ## Technical data build-up
 In this section, I will focus on the data manipulation and specific methods applied to the raw data. If necessary, please check out the links that are added next to the keywords.
 
-**1. Dataset 1 & 2**
+**1. Dataset 1 & 2**  
+```
+import netCDF4
+import numpy as np
+import pandas as pd
+import geopandas as gpd
+import xarray as xr
+
+file = '/content/Data2 Historical Sea salinity.nc' # mention the path to the downloaded file
+nc = xr.open_dataset(file)
+nc.values # High-dimensional
+
+to_year = nc.time.to_dataframe()
+to_convert = to_year['time']
+measured_year = pd.DatetimeIndex(to_convert).year
+
+measured_year
+
+nc['time'] = measured_year
+
+nc.time_bounds.to_dataframe()
+
+to_year_bound = nc.time_bounds.to_dataframe()
+to_convert_bound = to_year_bound['time_bounds']
+measured_year_bound = pd.DatetimeIndex(to_convert_bound).year
+
+test_replace = measured_year_bound[:660]
+values = np.repeat(np.arange(1960, 2015),12)
+np.append(values,2015)
+
+nc['time_bounds'] = ('time', values)
+nc['nav_lat'].values
+
+test_lat = nc['nav_lat'].values.reshape(120184,)
+test_lon = nc['nav_lon'].values.reshape(120184,)
+
+tuples = list(zip(test_lat, test_lon))
+loc_group = pd.MultiIndex.from_tuples(tuples)
+nc.coords['loc_group'] = ('location', loc_group)
+
+nc.sos.rolling(time = 12).mean().to_dataframe().dropna().to_csv('sea_salinity_historical.csv') # CHANGE nc.tos to nc.sos
+```
+
+
 IPCC. 
 
 **2. Dataset 3 & 4**  
